@@ -12601,7 +12601,9 @@ task.spawn(function()
 	minimizeHolder()
 	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield may have issues or features that are not functioning correctly.") end
 end)
-repeat wait() until game.Players.LocalPlayer.Character
+	end
+end)
+wait(4)
 keypress(0X4A)
 keyrelease(0x4A)
 wait(8)
@@ -12611,5 +12613,3 @@ wait(250)
 keypress(0x48)
 keyrelease(0x48)
 end
-	end
-end)
