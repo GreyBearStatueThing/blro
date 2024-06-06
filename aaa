@@ -12610,3 +12610,17 @@ task.spawn(function()
 	minimizeHolder()
 	if IsOnMobile then notify("Unstable Device", "On mobile, Infinite Yield may have issues or features that are not functioning correctly.") end
 end)
+local UIS = game:GetService("UserInputService")
+
+UIS.InputBegan:Connect(function(Input, IsTyping)
+	if IsTyping then return end
+	if Input.KeyCode == Enum.KeyCode.M then
+while wait(0.05) do
+local args = {
+    [1] = "Use"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
+	end
+end)
