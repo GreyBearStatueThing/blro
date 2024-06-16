@@ -1,4 +1,4 @@
-repeat wait(3) until game:IsLoaded()
+wait(5)
 local function moveTo(humanoid, targetPoint, andThen)
 	local targetReached = false
 
