@@ -39,6 +39,9 @@ local function moveTo(humanoid, targetPoint, andThen)
 		end
 	end)
 end
+local function andThen(reached)
+	print((reached and "Destination reached!") or "Failed to reach destination!")
+end
 moveTo(game.Players.LocalPlayer.Character.Humanoid, Vector3.new(26, 27, 123), andThen)
 wait(4)
 moveTo(game.Players.LocalPlayer.Character.Humanoid, Vector3.new(3, 35, 106), andThen)
