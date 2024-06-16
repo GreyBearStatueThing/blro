@@ -53,7 +53,7 @@ local args = {
     [1] = "Use"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("UseItem"):FireServer(unpack(args))
+game.ReplicatedStorage.UseItem:FireServer(unpack(args))
 end
 wait(270)
 local TeleportService = game:GetService("TeleportService")
