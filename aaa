@@ -59,6 +59,7 @@ wait(280)
 Players.LocalPlayer:Kick("\nRejoining...")
 wait()
 TeleportService:Teleport(5161312636, Players.LocalPlayer)
+end
 	else
 moveTo(game.Players.LocalPlayer.Character.Humanoid, Vector3.new(773, 116, 112), andThen)
 wait(4)
