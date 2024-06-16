@@ -59,5 +59,7 @@ local args = {
 game.ReplicatedStorage.UseItem:FireServer(unpack(args))
 end
 wait(280)
-local TeleportService = game:GetService("TeleportService")
-TeleportService:Teleport(4574912733, game.Players.LocalPlayer)
+Players.LocalPlayer:Kick("\nRejoining...")
+wait()
+TeleportService:Teleport(5161312636, Players.LocalPlayer)
+
