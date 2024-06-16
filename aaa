@@ -1,3 +1,4 @@
+wait(5)
 function moveTo(humanoid, targetPoint, andThen)
 	local targetReached = false
 
@@ -55,11 +56,10 @@ local args = {
 game.ReplicatedStorage.UseItem:FireServer(unpack(args))
 end
 wait(280)
-Players.LocalPlayer:Kick("\nRejoining...")
+game.Players.LocalPlayer:Kick("\nRejoining...")
 wait()
-TeleportService:Teleport(5161312636, Players.LocalPlayer)
-end
-	else
+game:GetService("TeleportService"):Teleport(5161312636, game.Players.LocalPlayer)
+	else if touch.Parent.Name ~= game.Players.LocalPlayer.Name do
 moveTo(game.Players.LocalPlayer.Character.Humanoid, Vector3.new(773, 116, 112), andThen)
 wait(4)
 moveTo(game.Players.LocalPlayer.Character.Humanoid, Vector3.new(760, 117, 98), andThen)
@@ -80,9 +80,9 @@ local args = {
 
 game.ReplicatedStorage.UseItem:FireServer(unpack(args))
 end
-wait(280)
-Players.LocalPlayer:Kick("\nRejoining...")
-wait()
-TeleportService:Teleport(5161312636, Players.LocalPlayer)
+				wait(280)
+				game.Players.LocalPlayer:Kick("\nRejoining...")
+				wait()
+				game:GetService("TeleportService"):Teleport(5161312636, game.Players.LocalPlayer)
 end
 end)
