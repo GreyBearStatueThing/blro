@@ -54,7 +54,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("UseItem"):FireServer(unpack(args))
+end
 wait(270)
 local TeleportService = game:GetService("TeleportService")
 TeleportService:Teleport(4574912733, game.Players.LocalPlayer)
-end
