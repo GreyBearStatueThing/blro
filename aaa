@@ -86,5 +86,4 @@ end
 				game:GetService("TeleportService"):Teleport(5161312636, game.Players.LocalPlayer)
 			end
 		end
-end
 end)
